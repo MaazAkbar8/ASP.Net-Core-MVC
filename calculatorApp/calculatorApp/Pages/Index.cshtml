@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+    <script src="~/js/calculator.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+<body>
+    <div class="app-bar">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+
+    <div class="calculator-container">
+        <div class="calculator">
+            <form id="calculatorForm" method="post">
+                <input type="number" asp-for="Number1" placeholder="Enter first number" />
+                <select asp-for="Operator">
+                    <option value="">Select operator</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" asp-for="Number2" placeholder="Enter second number" />
+                <button type="submit">Calculate</button>
+            </form>
+
+            @if (Model.ErrorMessage != null)
+            {
+                <div class="error-message">
+                    <p>@Model.ErrorMessage</p>
+                </div>
+            }
+
+            @if (Model.Result.HasValue)
+            {
+                <div class="result">
+                    <p>Result: @Model.Result</p>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
+
