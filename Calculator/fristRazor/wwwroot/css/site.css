@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    margin: 0; /* Remove default margins */
+    background: linear-gradient(to right, #ff5f6d, #ffc371, #ff6f61);
+}
+
+.app-bar {
+    background: linear-gradient(to right, #ff6f61, #de6161, #ff9a8b);
+    color: white;
+    padding: 15px;
+     
+    height: 70px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.app-bar h1{
+    font-size:26px;
+    font-weight:bolder;
+    margin-top:10px;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 60px; /* Adjust this value based on the height of the app bar */
+    height: calc(100vh - 60px); /* Full height minus the app bar height */
+    
+}
+
+.calculator {
+    /* background: #fff;*/
+    background: linear-gradient(to right, #e0f7fa, #b9fbc0, #fff9c4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+    .calculator input, .calculator select, .calculator button {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .calculator button {
+        background: #28a745;
+        color: white;
+        border: none;
+    }
+
+        .calculator button:hover {
+            background: #218838;
+        }
+
+/* Add to your site.css or similar stylesheet */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.result {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
