@@ -1,0 +1,63 @@
+﻿body
+{
+    
+}
+
+.custom-album {
+    margin-left: 90px; /* Adjusts padding-start */
+}
+ .custom-album i{
+     font-size:20px;
+     margin-right:9px
+     
+      
+ }
+.custom-button {
+    margin-right: 90px;
+}
+
+.content-container {
+    margin-top: 140px; /* Adjust this value as needed */
+    text-align: center;
+}
+.content-container p{
+
+    color:#808080
+}
+.custom_button{
+    width:200px;
+    height:43px
+}
+
+.crdcontainer{
+    margin-top:65px;
+}
+.dark-bg {
+    background-color: #585353; /* Dark background color */
+    height: 200px; /* Set a specific height for the placeholder */
+}
+
+.text-center {
+    color: #ffffff; /* White text color for better contrast */
+}
+
+.custom-btn {
+    border: 1px solid #ccc; /* Set border color and width */
+    border-radius: 0; /* Remove border radius if you want square corners */
+    color:#808080
+}
+
+.btn-group .btn {
+    margin-right: -1px; /* Remove space between the buttons */
+}
+
+    .btn-group .btn:last-child {
+        margin-right: 0; /* Fix right margin for the last button */
+    }
+
+.bottom-right {
+    bottom: 24px; /* Adjust the bottom position */
+    right: 10px; /* Adjust the right position */
+    font-size: 0.9rem; /* Adjust the font size if needed */
+    color: #808080 /* Text color (optional) */
+}
